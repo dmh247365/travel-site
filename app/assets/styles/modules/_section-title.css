@@ -11,9 +11,18 @@
     font-weight: 500;
   }
 
+  &--text-left {
+    text-align: left;
+  }
+
   &--blue {
     color: $mainBlue;
   }
+
+  &--white {
+    color: white;
+  }
+
 
   &--less-margin {
     margin-bottom: 1.3rem;

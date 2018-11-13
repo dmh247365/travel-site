@@ -1,0 +1,91 @@
+.paragraph {
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.8rem;
+    width: 100%;
+
+    @mixin atSmall {
+        font-size: 1.1rem;
+      }
+
+      @mixin atMedium {
+        font-size: 1.4rem;
+      }
+
+
+    &__text-justify {
+        text-align: justify;
+    }
+
+    &__text-right {
+        text-align: right;
+    }
+
+    &__font-black {
+        color:#676C72
+    }
+
+    /* I added */
+    &__wide {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__wide-left {
+
+        @mixin atMedium {
+            max-width:85%;
+        }
+
+        @mixin atLarge {
+            max-width:70%;
+        }
+
+
+    }
+
+    &__subtitle {
+        font-weight:500;
+        font-size:1.3rem;
+        color:grey;
+
+        @mixin atMedium {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__subheading {
+        font-weight:450;
+        font-size: 1rem;
+        color:grey;
+        margin-top: 0rem;
+        margin-bottom: 0.3rem;
+
+        @mixin atMedium {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__sentance {
+        font-weight:350;
+        font-size: 1rem;
+        color:grey;
+        text-align: justify;
+        margin-top: 0rem;
+        margin-bottom: 0.8rem;
+        padding-left: 0.8rem;
+
+        @mixin atMedium {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__last {
+        margin-bottom: 2rem;
+    }
+
+
+
+}

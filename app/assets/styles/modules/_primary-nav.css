@@ -11,6 +11,7 @@
     }
   }
 
+  
   ul {
     margin: 0;
     padding: 0;
@@ -56,3 +57,16 @@
   }
 
 }
+
+.yname {
+    float: left;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    padding: 0.2rem 1rem;
+    background-color: $mainBlue;
+    border-radius: 2.5%;
+
+    }
+

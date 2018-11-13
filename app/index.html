@@ -1,88 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Clear View Escapes</title>
+  <title>Lorraine Yoga</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
 
-<!-- build:css assets/styles/styles.css -->
-<link rel="stylesheet" href='temp/styles/styles.css'>
-<!-- endbuild -->
+  <!-- build:css assets/styles/styles.css -->
+  <link rel="stylesheet" href='temp/styles/styles.css'>
+  <!-- endbuild -->
 
-<!-- build:js assets/scripts/Vendor.js -->
-<script src='/temp/scripts/Vendor.js'></script>
-<!-- endbuild -->
+  <!-- build:js assets/scripts/Vendor.js -->
+  <script src='/temp/scripts/Vendor.js'></script>
+  <!-- endbuild -->
 
 </head>
+
 <body>
   <header class='site-header'>
     <div class="wrapper">
-      <div class="site-header__logo">
-        <div class="site-header__logo__graphic icon icon--clear-view-escapes">Clear View Escapes</div>
-      </div>
-
       <div class="site-header__menu-icon">
         <div class='site-header__menu-icon__middle'></div>
       </div>
 
-        <div class="site-header__menu-content">
-          <div class="site-header__btn-container">
-            <a href="#" class='btn open-modal'>Get in Touch</a>
-          </div>
+      <div class="site-header__menu-content">
+        <div class='yname'>The LiveWell Yogi</div>
+        <div class="site-header__btn-container">
+          <a href="#" class='btn open-modal'>Get in Touch</a>
+        </div>
         <nav class='primary-nav primary-nav--pull-right'>
           <ul>
-            <li><a href="#our-beginning" id='our-beginning-link'>Our Beginning</a></li>
-            <li><a href="#features" id='features-link'>Features</a></li>
+            <li><a href="#our-beginning" id='our-beginning-link'>About me</a></li>
+            <li><a href="#features" id='features-link'>Benefits of Yoga</a></li>
             <li><a href="#testimonials" id='testimonials-link'>Testimonials</a></li>
+            <li><a href="#classes" id='classes-link'>Classes</a></li>
           </ul>
         </nav>
-        </div>
+      </div>
     </div>
   </header>
+
   <div class="large-hero">
-
     <picture>
-      <source srcset="assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w" media='(min-width: 1380px)'>
-      <source srcset="assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w " media='(min-width: 990px)'>
-      <source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media='(min-width: 640px)'>
-      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w" alt="Coastal view of ocean and mountains" class='large-hero__image'>
+      <source srcset="assets/images/hero/lonelytree-unsplash-1920.jpg" , media='(min-width: 990px)'>
+      <source srcset="assets/images/hero-1920x1280.jpg 1380w, assets/images/hero-1920x1280.jpg 2760w" media='(min-width: 990px)'>
+      <source srcset="assets/images/hero-1920x1280.jpg 990w, assets/images/hero-1920x1280.jpg 1980w" media='(min-width: 640px)'>
+      <img srcset="assets/images/hero/lonelytree-unsplash.jpg " alt="Coastal view of ocean and mountains" class='large-hero__image'>
     </picture>
-
-    <div class="large-hero__text-content">
-      <div class="wrapper">
-        <h1 class="large-hero__title">Your clarity.</h1>
-        <h2 class="large-hero__subtitle">One trip away.</h2>
-        <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
-        <p><a href="#" class='btn btn--orange btn--large open-modal'>Get Started Today</a></p>
-      </div>
+    <div class="typewriter__content typewriter__title">
+      <span id="typed"></span>
     </div>
   </div>
 
-  <div id="our-beginning" class='page-section' data-matching-link='#our-beginning-link'>
+  <div id="our-beginning" class='page-section page-section-aboutme' data-matching-link='#our-beginning-link'>
     <div class="wrapper">
-      <h2 class='headline headline--centered headline--light headline--b-margin-small'>The first trip we planned <strong>was our own.</strong></h2>
-      <h3 class='headline headline--centered headline--orange headline--small headline--narrow headline--light headline--b-margin-large'>Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
+
       <div class="wrapper wrapper--medium wrapper--b-margin">
-          <img class='lazyload' sizes='(min-width: 970px) 976px, 100vw' data-srcset='assets/images/first-trip-low-res.jpg 565w, assets/images/first-trip.jpg 976w, assets/images/first-trip-hi-dpi.jpg 1952w' assets alt="Couple walking down a street.">
+
+
+        <!-- <h2 class='headline headline--centered headline--light headline--b-margin-small headline--no-t-margin'>Hi -->
+        <!-- I&rsquo;m Lorraine and I love yoga!</h2> -->
+        <div class='headline headline--small headline--orange headline--light headline--wide'>
+          <blockquote class='blockquotes blockquotes__right'>"Yoga takes you into the present moment, the only place
+            where life exists"<br /><strong> - Patanjali</strong></blockquote>
+          <p class='paragraph paragraph__text-justify paragraph__font-black'>In today&rsquo;s busy world it&rsquo;s
+            important to
+            take time out, to free yourself from limitations, experience inner peace and to competely relax focussing
+            on just you. To quieten the mind and strengthen your body is the greatest gift you can give yourself.
+            This is why I love yoga.
+          </p>
+          <!-- <blockquote class='blockquotes blockquotes__left'>"Yoga is not a religion. It is a science, science of well-being, science of youthfulness,
+                science of integrating body, mind, and soul"<strong> - Amit Ray</strong></blockquote> -->
+          <p class='paragraph paragraph__text-justify paragraph__font-black'>I&rsquo;m Lorraine, the LiveWell Yogi, and
+            I am
+            passionate
+            about sharing my knowledge of yoga. I know how easy it is to become stressed and understand how this
+            affects us both
+            physically and emotionally. my teachings will allow you to find your balance in life, to become more
+            peaceful in
+            the mind and to re-energise your body.
+          </p>
+          <blockquote class='blockquotes blockquotes__left'>"Take care of your body, it's the only place you have to
+            live" <br /><strong> - Jim Rohn</strong></blockquote>
+          <p class='paragraph paragraph__text-justify paragraph__font-black'>wherever you are on your journey, join me
+            to feel happier, healthier and to reconnect with yourself.</p>
+        </div>
+
+        <img srcset='assets/images/bench_b&w_960.jpg'>
       </div>
 
       <div class="row row--gutters">
         <div class='row__medium-4 row__medium-4--larger row__b-margin-until-medium'>
           <picture>
-            <source sizes='404px' data-srcset='assets/images/our-start.jpg 404w, assets/images/our-start-hi-dpi.jpg 808w' media='(min-width: 1020px)'>
-            <source sizes='320px' data-srcset='assets/images/our-start-portrait.jpg 382w, assets/images/our-start-portrait-hi-dpi.jpg 764w' media='(min-width: 800px)'>
-            <img class='lazyload' data-srcset='assets/images/our-start-landscape.jpg 800w, assets/images/our-start-landscape-hi-dpi.jpg 1600w' alt="Our founder, Jane Doe">
+            <!-- <source srcset='assets/images/BWY-Teacher-Logo.jpg' media='(min-width: 800px)'> -->
+            <img srcset='assets/images/BWY-Teacher-Logo.jpg' alt="British Wheel of Yoga symbol" class='image--bwy'>
           </picture>
         </div>
 
         <div class='row__medium-8 row__medium-8--smaller'>
           <div class='generic-content-container'>
-            <h2 class='headline headline--no-t-margin'>Here&rsquo;s how we got started&hellip;</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
+            <h2 class='headline headline--no-t-margin headline--centered'>My journey!</h2>
+            <p class='paragraph paragraph__text-justify paragraph__font-black'>I&rsquo;ve practised yoga for over 20
+              years. During this time there have been occassions when I didn&rsquo;t practice yoga, when life
+              just took over, but something always brought me back to a yoga class. When I didn&rsquo;t do yoga,
+              I just didn&rsquo;t feel good - I simply wasn&rsquo;t the best me.</p>
+
+            <p class='paragraph paragraph__text-justify paragraph__font-black'>The love of yoga has changed my life
+              and I am so grateful for that. I sat at a desk in the corporate world for 20 years and always knew
+              something was missing.
+            </p>
+
+
+            <p class='paragraph paragraph__text-justify paragraph__font-black'>When I realised that yoga was so much
+              more than just the physical practice I wanted to explore more of its wonderful benefits.
+              This curiosity drove me to embark on a 500 hour teacher training throught the British Wheel of Yoga with
+              the very experienced, and inspirational, Rosemary Bennett as my teacher trainer. I was hooked and my
+              journey of becoming a yogi began. </p>
+
+            <p class='paragraph paragraph__text-justify paragraph__font-black'>The two years training opened my eyes as
+              I learnt about yoga philosophy, meditation and relaxation, anatomy and physiology, about teaching safely
+              and a whole lot more about myself.</p>
+
+            <p class='paragraph paragraph__text-justify paragraph__font-black'>It was amazing, and I met some wonderful
+              and talented fellow yogis who are now out there teaching as well.</p>
+
+            <p class='paragraph paragraph__text-justify paragraph__font-black'>I couldn't imagine this change in my
+              life when
+              I worked in an office, but true to my learnings - I never look back, I look forward to my tomorrows but
+              always rejoice in today.
+            </p>
+
           </div>
         </div>
       </div>
@@ -91,37 +141,158 @@
 
   <div id="features" class='page-section page-section--blue' data-matching-link='#features-link'>
     <div class="wrapper">
+      <h2 class="section-title section-title--white"></span><strong>You </strong>&amp; the benefits of <strong>Yoga</strong></h2>
+      <p class='paragraph paragraph__text-justify paragraph__wide'>For thousands of years the benefits of yoga have
+        been well documented, and the same poses and breathing exercises have stood the test of time - it&rsquo;s never
+        been a
+        fad, it&rsquo;s about truth.
+        Though my own personal experiences, the physical, mental and spiritual practices have helped me through some
+        challenging times; it has
+        uplifted me, re energised me and taught me how to focus my mind.
+      </p>
 
-      <h2 class="section-title"><span class='icon icon--star section-title__icon'></span>Our <strong>Features</strong></h2>
+      <p class='paragraph paragraph__text-justify paragraph__wide'>When you invite yoga into your life you will:
+      </p>
+
       <div class='row row--gutters-large generic-content-container'>
-
         <div class='row__large-6'>
           <div class='feature-item'>
-            <span class='icon icon--rain feature-item__icon'></span>
-            <h3 class='feature-item__title'>We&rsquo;ll Watch the Weather</h3>
-            <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about
-              to rain in the next 20 minutes around your current location. A good rain
-              can be refreshing, but sometimes you just want to stay dry.</p>
+            <h3 class='feature-item__title'>&#x2714; &nbsp; strengthen your body</h3>
           </div>
-
           <div class='feature-item'>
-            <span class='icon icon--globe feature-item__icon'></span>
-            <h3 class='feature-item__title'>Global Guides</h3>
-            <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
+            <h3 class='feature-item__title'>&#x2714; &nbsp; improve your flexibility</h3>
+          </div>
+          <div class='feature-item'>
+            <h3 class='feature-item__title'>&#x2714; &nbsp; let go of held tension throughout the body</h3>
+          </div>
+          <div class='feature-item'>
+            <h3 class='feature-item__title'>&#x2714; &nbsp; focus on easing and freeing the breath</h3>
           </div>
         </div>
 
         <div class='row__large-6'>
           <div class='feature-item'>
-            <span class='icon icon--wifi feature-item__icon'></span>
-            <h3 class='feature-item__title'>Wi-Fi Waypoints</h3>
-            <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
+            <h3 class='feature-item__title'>&#x2714; &nbsp; learn to quieten the ever chattering thoughts that disturb
+              the mind allowing you to focus</h3>
           </div>
-
           <div class='feature-item'>
-            <span class='icon icon--fire feature-item__icon'></span>
-            <h3 class='feature-item__title'>Survival Kit</h3>
-            <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
+            <h3 class='feature-item__title'>&#x2714; &nbsp; achieve a sense of balance both physically and mentally</h3>
+          </div>
+          <div class='feature-item'>
+            <h3 class='feature-item__title'>&#x2714; &nbsp; switch off from the outside world and be in the moment</h3>
+          </div>
+          <div class='feature-item'>
+            <h3 class='feature-item__title'>&#x2714; &nbsp; learn to listen to your mind and body and accept its
+              teachings</h3>
+          </div>
+          <div class='feature-item'>
+            <h3 class='feature-item__title'>&#x2714; &nbsp; have more energy, sleep better and return to your
+              natural state of health and well-being</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <p class='paragraph paragraph__text-justify paragraph__wide'>But its so much more than the physical and mental
+        benefits,
+        its so muh more than movement and breath. the greatest goal is to learn about yourself and take what fills your
+        heart and mind into your life every day to enrivh your world. It brings peace.
+      </p>
+
+
+      <p class='paragraph paragraph__text-justify paragraph__wide'>Yoga is a journey and if you let it, it can be the
+        most wonderful
+        journey you will ever experience. You may not ever get into some of the yoga poses, but exploring your body and
+        mind is amazing.
+      </p>
+
+      <p class='paragraph paragraph__text-justify paragraph__wide'>&ldquo;Yoga is not about touching your toes... its
+        about
+        what you learn on the way down.&rdquo;
+      </p>
+    </div>
+  </div>
+
+  <div id="testimonials" class='page-section
+    page-section--no-b-padding-until-large
+    page-section--testimonials lazyload'
+    data-matching-link='#testimonials-link'>
+    <div class='wrapper wrapper-no-padding-until-large'>
+
+      <h2 class='section-title section-title--blue'><span class='icon icon--comment section-title__icon'></span>
+        <strong>Testimonials</strong></h2>
+
+      <div class='row row--gutters row--equal-height-at-large
+                  row--gutters-small
+                  row--t-padding
+                  generic-content-container'>
+        <div class='row__large-3'>
+          <div class='testimonial'>
+            <div class='testimonial__photo'>
+              <img class='lazyload' sized="160px" data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w"
+                alt='Jane Doe'>
+            </div>
+            <h3 class='testimonial__title'>Anne (92 years old)</h3>
+            <h4 class='testimonial__subtitle'>Chair based Yogi</h3>
+              <p>&ldquo;The "Gentle Yoga", is just
+                right for our age group. Beside the useful stretching and moving, breathing is an important
+                aspect of yoga and many of us are helped by that. At the end of the session there is always
+                a time of relaxation, which leaves us feeling very calm and full of wellbeing. Lorraine has
+                a lovely manner and helps everyone feel included and able to participate. We recommend yoga
+                to any older people.&rdquo;</p>
+          </div>
+        </div>
+
+        <div class='row__large-3'>
+          <div class='testimonial'>
+            <div class='testimonial__photo'>
+              <img class='lazyload' sized="160px" data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w"
+                alt='John Smith'>
+            </div>
+            <h3 class='testimonial__title'>Lesley</h3>
+            <h4 class='testimonial__subtitle'>Mat based Yogi</h3>
+              <p>&ldquo;Lorraine has a calm assurance and steady approach which is highly
+                skilled
+                and sensitive to people's needs. With an emphasis on different areas of the body for each session,
+                Lorraine
+                formulates inspirational and enjoyable classes that bring Mind, Body and Soul back into balance. Her
+                passion
+                and knowledge for Yoga flows through each class with expanations of what we are doing and why, together
+                with
+                all of the emotional, spiritual and physical benefits that each practice brings.
+                Regardless of age, fitness, experience or ability you will always feel welcome, comfortable and wanting
+                more!!!&rdquo;</p>
+          </div>
+        </div>
+
+        <div class='row__large-3'>
+          <div class='testimonial'>
+            <div class='testimonial__photo'>
+              <img class='lazyload' sized="160px" data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat.jpg 320w"
+                alt='Cat McKitty'>
+            </div>
+            <h3 class='testimonial__title'>Amanda</h3>
+            <h4 class='testimonial__subtitle'>6 week 1-2-1 yogic lessons</h3>
+              <p>&ldquo;I've not practiced yoga for over a decade. I used to love it and not too
+                sure why I ever stopped. I contacted Lorraine as I was nervous going into a class
+                after so long. Lorraine made me feel comfortable and listened to all of my concerns.
+                The lessons she created just for me were amazing. My journey has begun again and this
+                time I'm not going to stop.&rdquo;</p>
+          </div>
+        </div>
+
+        <div class='row__large-3'>
+          <div class='testimonial testimonial--last'>
+            <div class='testimonial__photo'>
+              <img class='lazyload' sized="160px" data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat.jpg 320w"
+                alt='Cat McKitty'>
+            </div>
+            <h3 class='testimonial__title'>Anna</h3>
+            <h4 class='testimonial__subtitle'>Fellow Yoga instructor</h3>
+              <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut.&rdquo;</p>
           </div>
         </div>
 
@@ -129,63 +300,179 @@
     </div>
   </div>
 
-  <div id="testimonials" class='page-section
-    page-section--no-b-padding-until-large
-    page-section--testimonials lazyload' data-matching-link='#testimonials-link'>
-    <div class='wrapper wrapper-no-padding-until-large'>
+  <script>
+    function initialize1() {
+      // Will = 53.2926 // -3.0101
+      // PSL =  53.357  // -2.99656
+      // DL =   53.2637 // -2.8909
+      var latlng1 = new google.maps.LatLng(53.2926, -3.0101);
+      var latlng2 = new google.maps.LatLng(53.357, -2.99656);
+      var latlng3 = new google.maps.LatLng(53.2637, -2.8909);
 
-      <h2 class='section-title section-title--blue'><span class='icon icon--comment section-title__icon'></span>
-        Real <strong>Testimonials</strong></h2>
+      var myOptions1 = {
+        zoom: 17,
+        center: latlng1
+      };
 
-      <div class='row row--gutters row--equal-height-at-large
-                  row--gutters-small
-                  row--t-padding
-                  generic-content-container'>
-        <div class='row__large-4'>
-          <div class='testimonial'>
-            <div class='testimonial__photo'>
-              <img class='lazyload' sized="160px" data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt='Jane Doe'>
-            </div>
-            <h3 class='testimonial__title'>Jane Doe</h3>
-            <h4 class='testimonial__subtitle'>9 Time Escaper</h3>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate
-               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui
-                officia deserunt mollit anim id est laborum. Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
-          </div>
-        </div>
+      var myOptions2 = {
+        zoom: 15,
+        center: latlng2
+      };
 
-        <div class='row__large-4'>
-          <div class='testimonial'>
-            <div class='testimonial__photo'>
-              <img class='lazyload' sized="160px" data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt='John Smith'>
-            </div>
-            <h3 class='testimonial__title'>John Smith</h3>
-            <h4 class='testimonial__subtitle'>4 Time Escaper</h3>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
-          </div>
-        </div>
+      var myOptions3 = {
+        zoom: 15,
+        center: latlng3
+      };
 
-        <div class='row__large-4'>
-          <div class='testimonial testimonial--last'>
-            <div class='testimonial__photo'>
-              <img class='lazyload' sized="160px" data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat.jpg 320w" alt='Cat McKitty'>
-            </div>
-            <h3 class='testimonial__title'>Cat McKitty</h3>
-            <h4 class='testimonial__subtitle'>6 Time Escaper</h3>
-            <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
-          </div>
-        </div>
+      var map1 = new google.maps.Map(document.getElementById("map_WILL"), myOptions1);
+      var map2 = new google.maps.Map(document.getElementById("map_PSL"), myOptions2);
+      var map3 = new google.maps.Map(document.getElementById("map_DL"), myOptions3);
 
+      var myMarker1 = new google.maps.Marker(
+        {
+          position: latlng1,
+          map: map1
+        });
+
+      var myMarker2 = new google.maps.Marker(
+        {
+          position: latlng2,
+          map: map2
+        });
+
+      var myMarker3 = new google.maps.Marker(
+        {
+          position: latlng3,
+          map: map3
+        });
+
+    }
+  </script>
+
+
+
+
+
+
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuDKYEj5N5iqHnSRxznsK__xaz3OA1KSI&callback=initialize1"
+        async defer></script> -->
+
+  <!-- <div onload='initialize1()'></div> -->
+  <div id='classes' class='page-section page-section--blue' data-matching-link='#classes-link'>
+    <div class="wrapper">
+      <h2 class='section-title section-title--white'><strong>Classes</strong></h2>
+
+      <div class='row__large-3 test-block4'>
+        <div class='classes__title'>Mat Based Yoga:</div>
+        <div class='classes__details'>Wednesday: 7.00pm - 8.30pm </div>
+        <div class='classes__charge'>Cost: £7.00</div>
+        <div class='classes__title'>Chair Based Yoga:</div>
+        <div class='classes__details'>Thursday: 2.30pm - 3.30pm</div>
+        <div class='classes__charge'>Cost: £5.00</div>
+        <div class='classes__title classes__title--final'>Venue:</div>
+        <div class='classes__details'>Willaston Methodist Church</div>
+        <div class='classes__details'>1 Elm Road<br>Willaston<br>CH64 1RJ</div>
       </div>
+
+      <div class='row__large-4--larger test-block8'>
+        <div id="map_WILL"></div>
       </div>
+      <div class='row__large-6--larger'>
+        <div class="background-test-color"></div>
+      </div>
+
+      <div class='row__large-3 test-block4'>
+        <div class='classes__title'>Chair Based Yoga:</div>
+        <div class='classes__details'>Thursday - Morning</div>
+        <div class='classes__details'>For Osbourne Court residents only</div>
+        <div class='classes__title classes__title--final'>Venue:</div>
+        <div class='classes__details'>Osbourne Court</div>
+        <div class='classes__details'>Central Road<br>Port Sunlight<br>CH62 5AW</div>
+      </div>
+
+      <div class='row__large-4--larger test-block8'>
+        <div id="map_PSL"></div>
+      </div>
+      <div class='row__large-6--larger'>
+        <div class="background-test-color"></div>
+      </div>
+
+
+      <div class='row__large-3 test-block4'>
+        <div class='classes__title'>Mat Based Yoga:</div>
+        <div class='classes__details'>Provide cover for various classes</div>
+        <div class='classes__details'>For David Lloyd members only</div>
+        <div class='classes__title classes__title--final'>Venue:</div>
+        <div class='classes__details'>David Lloyd Club</div>
+        <div class='classes__details'>Stanney Lane<br>Ellesmere Port<br>CH65 9JN</div>
+      </div>
+
+      <div class='row__large-4--larger test-block8'>
+        <div id="map_DL"></div>
+      </div>
+      <div class='row__larger-6--larger'></div>
+
+    </div>
+  </div>
+
+
+
+  <div class='wrapper'>
+
+    <h2 class='section-title section-title--text-left section-title--blue'><strong>Class information</strong></h2>
+    <div class=paragraph__wide-left>
+      <h3 class='paragraph__subtitle'>What to expect in a class</h3>
+
+      <h4 class='paragraph__subheading'>Centring</h4>
+      <p class='paragraph__sentance'>Our Hatha class will start with a short centring exercise, allowing you the space
+        to prepare for your time on the mat/chair.</p>
+
+      <h4 class='paragraph__subheading'>Asana</h4>
+      <p class='paragraph__sentance'>We will then start warming up the body and mind and then move into asana practice
+        (posture practice) which can include standing and seated poses, twists, side bends,
+        forward bends, balances and inversions.</p>
+
+      <h4 class='paragraph__subheading'>Pranayama</h4>
+      <p class='paragraph__sentance'>During classes we will also explore the breath and practice specific breathing
+        techniques (pranayama).</p>
+
+
+      <h4 class='paragraph__subheading'>Relaxation and Meditation</h4>
+      <p class='paragraph__sentance paragraph__last'>Each class ends with 10-15 minutes of relaxation and/or
+        meditation.</p>
+
+      <p class='paragraph__sentance'><strong><i>All postures can be adapted for people at different levels or with
+            certain medical
+            conditions.</strong></i></p>
+
+
+      <h3 class='paragraph__subtitle'>Other information</h3>
+
+      <h4 class='paragraph__subheading'>Before a class</h4>
+      <p class='paragraph__sentance'>Try not to eat a big meal about 2 hours before a class. A light meal or snack
+        is okay if you need something to eat.</p>
+
+      <h4 class='paragraph__subheading'>What to bring</h4>
+      <p class='paragraph__sentance'>For the mat based classes all you need to bring is your own mat or if you havent
+        got a mat just yet, a towel will do.</p>
+
+      <p class='paragraph__sentance'>Water is available at the venue but you may wish to bring your own water bottle
+        in case you get thirsty..</p>
+
+      <p class='paragraph__sentance'>I will provide other props that we may need such as blocks and belts, but if you
+        have your own feel free to bring them.</p>
+
+      <h4 class='paragraph__subheading'>Other things to know</h4>
+      <p class='paragraph__sentance paragraph__last'>We practice yoga in bare feet but please if your shy about your
+        feet, do not let
+        this put you off and its good to know that there are special sticky yoga socks
+        you can buy if you would really would prefer not to practice with bare feet.</p>
+    </div>
   </div>
 
   <footer class='site-footer'>
     <div class="wrapper">
-      <p><span class='site-footer__text'>Copyright &copy; 2016 Clear View Escapes. All rights reserved.</span>
+      <p><span class='site-footer__text'>Copyright &copy; 2018 Your Yoga Journey. All rights reserved.</span>
         <a href="#" class='btn btn--orange open-modal'>Get in Touch</a></p>
     </div>
   </footer>
@@ -193,17 +480,20 @@
   <div class='modal'>
     <div class='modal__inner'>
       <h2 class='section-title section-title--blue section-title--less-margin'><span class='icon icon--mail
-      section-title__icon'></span> Get in <strong>Touch</strong></h2>
+      section-title__icon'></span>
+        Get in <strong>Touch</strong></h2>
+
       <div class='wrapper wrapper--narrow'>
-        <p class='modal__description'>We will have an online order system in place soon. Until then, connect with
-         us on any of the platforms below!</p>
+        <p class='modal__description'><strong>Tel</strong></p>
+        <p class='modal__description modal__description__info'>012xxx xxxx</p>
+        <p class='modal__description'><strong>Email</strong></p>
+        <p class='modal__description modal__description__info'>xxx@gmail.com</p>
+        </p>
       </div>
 
       <div class='social-icons'>
         <a href="#" class='social-icons__icon'><span class='icon icon--facebook'></span></a>
-        <a href="#" class='social-icons__icon'><span class='icon icon--twitter'></span></a>
         <a href="#" class='social-icons__icon'><span class='icon icon--instagram'></span></a>
-        <a href="#" class='social-icons__icon'><span class='icon icon--youtube'></span></a>
       </div>
 
     </div>
@@ -214,4 +504,5 @@
   <script src='/temp/scripts/App.js'></script>
   <!-- endbuild -->
 </body>
+
 </html>

@@ -477,6 +477,10 @@ a {
 
 .large-hero__image {
     display: block;
+    width: 100%;
+    max-height: 725px;
+    /* max-height: 75%; */
+    overflow: hidden;
   }
 
 .large-hero__text-content {
@@ -500,14 +504,14 @@ a {
 .large-hero__title {
     font-weight: 300;
     color: #2f5572;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     margin: 0;
   }
 
 @media (min-width: 530px) {
 
 .large-hero__title {
-      font-size: 4.8rem
+      font-size: 1.5rem
   }
   }
 
@@ -586,11 +590,6 @@ a {
   max-width: 470px;
 }
 
-/* .wrapper {
-  padding-left: 0;
-  padding-right: 0;
-} */
-
 .wrapper--no-padding-until-medium {
   padding-left: 0;
   padding-right: 0;
@@ -639,6 +638,13 @@ a {
     padding: 4.5rem 0
 
 }
+  }
+
+@media (min-width: 800px) {
+
+.page-section-aboutme {
+      padding: 1rem 0 1rem 0
+  }
   }
 
 .page-section--no-b-padding-until-medium {
@@ -700,17 +706,17 @@ a {
 }
 
 .headline--orange {
-  color: #d59541;
+  /* color:#444444; */
+  color:#676C72;
 }
 
-.headline--small {
-  font-size: 1.2rem;
-}
+/* font-size: 1.2rem; */
 
 @media (min-width: 530px) {
 
 .headline--small {
-    font-size: 1.875rem
+    /* font-size: 1.875rem; */
+    font-size: 1.4rem
 }
   }
 
@@ -720,8 +726,15 @@ a {
   margin-right: auto;
   }
 
+.headline--wide {
+  max-width:1050px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
 .headline--light {
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .headline strong {
@@ -784,6 +797,11 @@ a {
       margin-bottom: 0;
     }
 
+    .row__medium-3 {
+      float: left;
+      width: 25%;
+    }
+
     .row__medium-4 {
       float: left;
       width: 33.33%;
@@ -814,14 +832,26 @@ a {
       margin-bottom: 0;
     }
 
+    .row__large-3 {
+      float: left;
+      width: 25%;
+    }
+
     .row__large-4 {
       float: left;
       width: 33.33%;
     }
 
     .row__large-4--larger {
+      float: left;
       width: 37%;
     }
+
+    .row__large-6--larger {
+      float: left;
+      width: 38%;
+    }
+
     .row__large-6 {
       float: left;
       width: 50%;
@@ -905,8 +935,16 @@ a {
     font-weight: 500;
   }
 
+.section-title--text-left {
+    text-align: left;
+  }
+
 .section-title--blue {
     color: #2f5572;
+  }
+
+.section-title--white {
+    color: white;
   }
 
 .section-title--less-margin {
@@ -935,43 +973,35 @@ a {
 
 .feature-item {
   position: relative;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  height: 3rem;
+
+
 }
 
 @media (min-width: 530px) {
 
 .feature-item {
-    padding-left: 94px
+    padding-left: 94px;
+    height: 5rem;
+    margin-bottom: 2rem
+
+
 }
   }
 
-.feature-item__icon {
-    display: block;
-    margin: 0 auto;
-  }
-
-@media (min-width: 530px) {
-
-.feature-item__icon {
-      position: absolute;
-      left: 0
-  }
-  }
-
 .feature-item__title {
-    font-size: 1.6rem;
+    font-size: 0.9rem;
     font-weight: 300;
-    margin-top: 0.7em;
-    margin-bottom: .8rem;
-    text-align: center;
+    margin: 0 0 0 1.2rem;
+    text-align: left;
   }
 
 @media (min-width: 530px) {
 
 .feature-item__title {
-      margin-top: 0.8em;
-      font-size: 1.875rem;
-      text-align: left
+      font-size: 1.3rem;
+      margin: 1rem 0 0 1.2rem
   }
   }
 
@@ -1154,7 +1184,8 @@ Instead edit gulp/templates/sprite */
 }
 
     .site-header--dark {
-      background-color: rgba(23, 51, 72, .85);
+      /* background-color: rgba(23, 51, 72, .85); */
+      background-color: rgba(23, 51, 72, 1);
     }
   }
 
@@ -1392,6 +1423,18 @@ Instead edit gulp/templates/sprite */
       }
   }
 
+.yname {
+    float: left;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+    padding: 0.2rem 1rem;
+    background-color: #2f5572;
+    border-radius: 2.5%;
+
+    }
+
 .reveal-item {
   opacity: 0;
   -webkit-transition: all 1.5s ease-out;
@@ -1425,43 +1468,48 @@ Instead edit gulp/templates/sprite */
 }
 
 .modal--is-visible {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  };
-
-.modal__description {
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 300;
-    line-height: 1.65;
-  }
-
-.modal__close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 2rem;
-    -webkit-transform: scaleX(1.2);
-            transform: scaleX(1.2);
-    -webkit-transform-origin: 100% 0;
-            transform-origin: 100% 0;
-    color: #2f5572;
-    cursor: pointer;
-  }
-
-.modal__close:hover {
-      color: #d59541;
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
 
+.modal__description {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 0.4;
+    }
+
+.modal__description__info {
+          font-weight:350;
+          margin-bottom: 2.5rem;
+        }
+
+.modal__close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 2rem;
+      -webkit-transform: scaleX(1.2);
+              transform: scaleX(1.2);
+      -webkit-transform-origin: 100% 0;
+              transform-origin: 100% 0;
+      color: #2f5572;
+      cursor: pointer;
+    }
+
+.modal__close:hover {
+          color: #d59541;
+        }
+
 .modal__inner {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+    }
 
 .social-icons {
   text-align: center;
@@ -1492,3 +1540,319 @@ Instead edit gulp/templates/sprite */
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
     }
+
+.paragraph {
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1.8rem;
+    width: 100%;
+
+
+
+}
+
+@media (min-width: 530px) {
+
+.paragraph {
+        font-size: 1.1rem
+
+
+
+}
+  }
+
+@media (min-width: 800px) {
+
+.paragraph {
+        font-size: 1.4rem
+
+
+
+}
+  }
+
+.paragraph__text-justify {
+        text-align: justify;
+    }
+
+.paragraph__text-right {
+        text-align: right;
+    }
+
+.paragraph__font-black {
+        color:#676C72
+    }
+
+/* I added */
+
+.paragraph__wide {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+@media (min-width: 800px) {
+
+.paragraph__wide-left {
+            max-width:85%
+
+
+    }
+  }
+
+@media (min-width: 1010px) {
+
+.paragraph__wide-left {
+            max-width:70%
+
+
+    }
+  }
+
+.paragraph__subtitle {
+        font-weight:500;
+        font-size:1.3rem;
+        color:grey;
+    }
+
+@media (min-width: 800px) {
+
+.paragraph__subtitle {
+            font-size: 1.8rem
+    }
+  }
+
+.paragraph__subheading {
+        font-weight:450;
+        font-size: 1rem;
+        color:grey;
+        margin-top: 0rem;
+        margin-bottom: 0.3rem;
+    }
+
+@media (min-width: 800px) {
+
+.paragraph__subheading {
+            font-size: 1.2rem
+    }
+  }
+
+.paragraph__sentance {
+        font-weight:350;
+        font-size: 1rem;
+        color:grey;
+        text-align: justify;
+        margin-top: 0rem;
+        margin-bottom: 0.8rem;
+        padding-left: 0.8rem;
+    }
+
+@media (min-width: 800px) {
+
+.paragraph__sentance {
+            font-size: 1.2rem
+    }
+  }
+
+.paragraph__last {
+        margin-bottom: 2rem;
+    }
+
+.test-block4 {
+background-color:grey;
+height: 300px;
+border: 0.2rem;
+border-color: white;
+border-style: solid;
+margin-bottom: 2rem;
+}
+
+.test-block8 {
+    height: 300px;
+    border: 0.2rem 0.2rem 0 0.2rem;
+    border-color: white;
+    border-style: solid;
+    padding: 0 0 0 0;
+    margin-bottom: 2rem;
+}
+
+test__inner {
+    height: 320px;
+}
+
+.frame-block {
+    background-color:#2f5572;
+    height: 30px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    padding: 0.25rem 0rem;
+
+}
+
+.frame-block--details {
+        text-align: left;
+        padding-left: 0.6rem;
+    }
+
+.classes__title {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-left: 0.6rem;
+    margin: 0.8rem 0 0.3rem 0;
+}
+
+.classes__title--final {
+        border-top: 3px solid #fff;
+        padding-top: 0.3rem;
+    }
+
+.classes__details {
+    font-weight: 250;
+    font-size: 1.1rem;
+    padding-left: 0.6rem;
+}
+
+.classes__charge {
+    font-weight: 250;
+    font-size: 1.1rem;
+    padding-left: 0.6rem;
+}
+
+.background-test-color {
+    background-color: #2f5572;
+    height: 300px;
+    border: 0;
+    margin-bottom: 2rem;
+
+}
+
+#map_WILL {
+    height: 100%;
+    width: 100%;
+}
+
+#map_PSL {
+    height: 100%;
+    width: 100%;
+}
+
+#map_DL {
+    height: 100%;
+    width: 100%;
+}
+
+.blockquotes {
+    text-align: justify;
+    font-size: 1rem;;
+    font-style: italic;
+    /* color: #708090; */
+    color: #797A7C;
+    font-weight: 400;
+    padding: 5px;
+    border-top: 1px solid #696969;
+    border-bottom: 1px solid #696969;
+    background-color:#F3F4F9;
+}
+
+@media (min-width: 530px) {
+
+.blockquotes {
+        font-size: 0.8rem
+}
+  }
+
+.blockquotes__right {
+        margin: 20px 0px 0px 15px;
+    }
+
+@media (min-width: 530px) {
+
+.blockquotes__right {
+            width: 195px;
+            float: right;
+            margin: 5px 0 0px 10px
+    }
+  }
+
+.blockquotes__left {
+        margin: 20px 0px 0px 15px;
+    }
+
+@media (min-width: 530px) {
+
+.blockquotes__left {
+            width: 200px;
+            float: left;
+            margin: 5px 10px 0px 0px
+    }
+  }
+
+.image--bwy {
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        width: 50%;
+
+    }
+
+@media (min-width: 530px) {
+
+.image--bwy {
+            width: 45%;
+            margin-top:0
+
+    }
+  }
+
+@media (min-width: 800px) {
+
+.image--bwy {
+            width: 100%;
+            margin-top: 4rem
+
+    }
+  }
+
+@media (min-width: 1010px) {
+
+.image--bwy {
+            width: 80%;
+            margin-top: 3rem
+
+    }
+  }
+
+.typewriter {
+position: relative;
+
+
+
+
+}
+
+.typewriter__content {
+    padding-top: 88px;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+
+.typewriter__content {
+      padding-top: 0px
+}
+  }
+
+.typewriter__title {
+    font-weight: 400;
+    color: white;
+    font-size: 2.8rem;
+    margin: 0;
+}

@@ -11,40 +11,45 @@
   transform: scale(1.2);
   transition: all .3s ease-out;
 
-  &--is-visible {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-  };
-
-
-  &__description {
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 300;
-    line-height: 1.65;
-  }
-
-  &__close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 2rem;
-    transform: scaleX(1.2);
-    transform-origin: 100% 0;
-    color: $mainBlue;
-    cursor: pointer;
-
-    &:hover {
-      color: $mainOrange;
+    &--is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
     }
-  }
 
-  &__inner {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+
+    &__description {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 0.4;
+
+        &__info {
+          font-weight:350;
+          margin-bottom: 2.5rem;
+        }
+    }
+
+    &__close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 2rem;
+      transform: scaleX(1.2);
+      transform-origin: 100% 0;
+      color: $mainBlue;
+      cursor: pointer;
+
+        &:hover {
+          color: $mainOrange;
+        }
+    }
+
+    &__inner {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
 }

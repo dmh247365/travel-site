@@ -2,8 +2,8 @@
   "name": "travel-site",
   "version": "1.0.0",
   "scripts": {
-    "webpack" : "webpack",
-    "watch" : "gulp watch"
+    "webpack": "webpack",
+    "watch": "gulp watch"
   },
   "dependencies": {
     "jquery": "3.2.1",
@@ -11,6 +11,7 @@
     "lazysizes": "4.0.1",
     "normalize.css": "7.0.0",
     "picturefill": "3.0.2",
+    "typed.js": "^2.0.9",
     "waypoints": "4.0.1"
   },
   "devDependencies": {
